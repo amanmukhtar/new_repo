@@ -17,8 +17,8 @@ module.exports = function (grunt) {
 		gitcheckout: {
 			target: {
 				options: {
-					branch: 'dev',
-                	create: true
+					branch: 'master',
+                	create: false
 				}
 			}
 		},
