@@ -43,12 +43,19 @@ module.exports = function (grunt) {
 			  }
 			}
 		  },
+		  gitpush: {
+			your_target: {
+			  options: {
+				// Target-specific options go here.
+			  }
+			}
+		  },
 		
     });
     // These plugins provide necessary tasks
 	grunt.loadNpmTasks('grunt-git');
     // Default task
-    grunt.registerTask('default', ['gitadd','gitcommit']);
+    grunt.registerTask('default', ['gitadd','gitcommit','gitpush']);
 	grunt.registerTask('clone', ['gitclone']);
 	grunt.registerTask('checkout', ['gitcheckout']);
 };
