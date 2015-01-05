@@ -25,7 +25,6 @@ module.exports = function (grunt) {
 		gitadd: {
 			task: {
 			  options: {
-				force: true
 			  },
 			  files: {
 				src: ['*']
